@@ -14,6 +14,13 @@ brew tap cpbotha/marmaduke-chromium
 brew cask install marmaduke-chromium
 #+END_SRC
 
+If you prefer the build without google sync and widevive (which you
+need to play for example Netflix), then rather install:
+
+#+BEGIN_SRC shell
+brew cask install marmaduke-chromium-nosync
+#+END_SRC
+
 From here on, =brew cask outdated= will also tell you when your
 chromium needs updating, in which case a simple =brew upgrade
 marmaduke-chromium= will do the trick.
