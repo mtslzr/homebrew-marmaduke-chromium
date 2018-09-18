@@ -1,0 +1,22 @@
+#+TITLE: Homebrew Tap for the Marmaduke Chromium builds
+
+If you're looking for a macOS build of the latest stable Chromium
+which includes modern video codecs such as H.264, then the marmaduke
+builds as advertised on [[https://chromium.woolyss.com/#mac][Woolyss]] are your best bet.
+
+This homebrew tap was created for the easy installation of
+above-mentioned builds.
+
+To install do:
+
+#+BEGIN_SRC shell
+brew tap cpbotha/marmaduke-chromium
+brew cask install marmaduke-chromium
+#+END_SRC
+
+From here on, =brew cask outdated= will also tell you when your
+chromium needs updating, in which case a simple =brew upgrade
+marmaduke-chromium= will do the trick.
+
+My RSS reader keeps on eye on the [[https://github.com/macchrome/macstable/releases][marmaduke releases]], but please [[https://github.com/cpbotha/homebrew-marmaduke-chromium/issues][file
+an issue]] here if you notice that we're out of date!
