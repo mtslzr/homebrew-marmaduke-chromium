@@ -14,7 +14,7 @@ brew tap cpbotha/marmaduke-chromium
 brew cask install marmaduke-chromium
 #+END_SRC
 
-If you prefer the build without google sync and widevive (which you
+If you prefer the build without google sync and widevine (which you do
 need to play for example Netflix), then rather install:
 
 #+BEGIN_SRC shell
