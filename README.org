@@ -21,9 +21,9 @@ need to play for example Netflix), then rather install:
 brew cask install marmaduke-chromium-nosync
 #+END_SRC
 
-From here on, =brew cask outdated= will also tell you when your
-chromium needs updating, in which case a simple =brew upgrade
-marmaduke-chromium= will do the trick.
+From here on, =brew update && brew cask outdated= will also tell you
+when your chromium needs updating, in which case a simple =brew
+upgrade marmaduke-chromium= will do the trick.
 
 My RSS reader keeps on eye on the [[https://github.com/macchrome/macstable/releases][marmaduke releases]], but please [[https://github.com/cpbotha/homebrew-marmaduke-chromium/issues][file
 an issue]] here if you notice that we're out of date!
