@@ -31,3 +31,16 @@ brew cask upgrade marmaduke-chromium
 
 My RSS reader keeps on eye on the [[https://github.com/macchrome/macstable/releases][marmaduke releases]], but please [[https://github.com/cpbotha/homebrew-marmaduke-chromium/issues][file
 an issue]] here if you notice that we're out of date!
+
+* Important notice re version v70.0.3538.102
+
+If you installed the =marmaduke-chromium= cask of v70.0.3538.102 on
+November 11 or 12, you might have received a [[https://github.com/macchrome/macstable/issues/4][temporarily broken
+build]]. If your chromium does not want to run, please do the following
+to get marmaduke's fixed build:
+
+#+BEGIN_SRC shell
+brew update
+brew cask uninstall marmaduke-chromium
+brew cask install marmaduke-chromium
+#+END_SRC
