@@ -1,6 +1,6 @@
 cask 'marmaduke-chromium' do
-  version '71.0.3578.80'
-  sha256 '3ff803b8adafbd2a16d56556d1f853f1facd9861bb41c08b775f7586bb523914'
+  version '71.0.3578.98'
+  sha256 '5fafed5eae92de58ff8a23568f05fd2abd9e43bfde56c9e251cc819a81f77e5e'
 
   # https://github.com/macchrome/macstable/releases/ was verified as official when first introduced to the cask
   url "https://github.com/macchrome/macstable/releases/download/v#{version}-r599034-macOS/Chromium.#{version}.sync.app.zip"
