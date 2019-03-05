@@ -21,6 +21,19 @@ need to play for example Netflix), then rather install:
 brew cask install marmaduke-chromium-nosync
 #+END_SRC
 
+Since 2019-03-05, there is also a cask for the [[https://github.com/Eloston/ungoogled-chromium/blob/master/README.md][UNGOOGLED]] Chromium
+build by Marmaduke which you can install with:
+
+#+BEGIN_SRC shell
+brew cask install marmaduke-chromium-ungoogled
+#+END_SRC
+
+* Which cask should I use?
+
+If you don't know, then use =marmaduke-chromium=.
+
+* Updating your chromium
+
 From here on, do the following to upgrade when a new build becomes
 available:
 
