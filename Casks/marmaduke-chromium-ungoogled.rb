@@ -1,7 +1,7 @@
 cask 'marmaduke-chromium-ungoogled' do
   version '79.0.3945.88'
   revision '706915'
-  sha1 '7328A3227D0FF22E844A839D5E22F58D86188E64'
+  sha256 '6157da29da105c6b4b32fd909e71f7c6f524c972d17dd7e53b2ba775e6d831a8'
 
   # https://github.com/macchrome/macstable/releases/ was verified as official when first introduced to the cask
   url "https://github.com/macchrome/macstable/releases/download/v#{version}-r#{revision}-Ungoogled-macOS/Chromium.app.ungoogled-#{version}.zip"
