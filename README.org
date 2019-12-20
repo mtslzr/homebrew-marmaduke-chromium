@@ -7,12 +7,12 @@ builds as advertised on [[https://chromium.woolyss.com/#mac][Woolyss]] are your 
 This homebrew tap was created for the easy installation of
 above-mentioned builds.
 
-The latest update is v73.0.3683.86.
+The latest update is v79.0.3945.88 (706915).
 
 To install do:
 
 #+BEGIN_SRC shell
-brew tap cpbotha/marmaduke-chromium
+brew tap mtslzr/marmaduke-chromium
 brew cask install marmaduke-chromium
 #+END_SRC
 
