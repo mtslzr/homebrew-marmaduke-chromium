@@ -20,7 +20,9 @@ brew cask install marmaduke-chromium
 This tap includes three versions of Marmaduke Chromium:
 
 `marmaduke-chromium` - Includes Google Sync and wildvine (DRM for Netflix).
+
 `marmaduke-chromium-nosync` - Does not include Google Sync nor wildvine.
+
 `marmaduke-chromium-ungoogled` - ungoogled-chromium ([Eloston/ungoogled-chromium/](https://github.com/Eloston/ungoogled-chromium/))
 
 If you're unsure, you most likely want to install `marmaduke-chromium`.
