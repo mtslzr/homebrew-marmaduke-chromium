@@ -7,7 +7,7 @@ builds as advertised on [[https://chromium.woolyss.com/#mac][Woolyss]] are your 
 This homebrew tap was created for the easy installation of
 above-mentioned builds.
 
-The latest update is v79.0.3945.88 (706915).
+The latest update is v79.0.3945.79 (706915).
 
 To install do:
 
