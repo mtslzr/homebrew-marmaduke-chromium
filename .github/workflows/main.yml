@@ -12,5 +12,13 @@ jobs:
         run: brew tap mtslzr/marmaduke-chromium
       - name: Update Brew
         run: brew update
-      - name: Install Casks
-        run: brew cask install marmaduke-chromium{,-nosync,-ungoogled}
+      - name: Install Cask
+        run: brew cask install marmaduke-chromium
+      - name: Uninstall Cask
+        run: brew cask uninstall marmaduke-chromium
+      - name: Install Cask (nosync)
+        run: brew cask install marmaduke-chromium-nosync
+      - name: Uninstall Cask (nosync)
+        run: brew cask uninstall marmaduke-chromium-nosync
+      - name: Install Cask (ungoogled)
+        run: brew cask install marmaduke-chromium-ungoogled
