@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   install_homebrew:
-    run-on: macos-latest
+    runs-on: macos-latest
     steps:
       - name: Install Homebrew
         run: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
