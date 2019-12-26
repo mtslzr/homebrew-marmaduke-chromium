@@ -3,7 +3,7 @@
 *Forked from [cpbotha/homebrew-marmaduke-chromium](https://github.com/cpbotha/homebrew-marmaduke-chromium).*
 
 All Chromium releases can be found at [Woolyss](https://chromium.woolyss.com).
-Builds are pulled from [macstable/macchrome](https://github.com/macstable/macchrome).
+Builds are pulled from [macchrome/macstable](https://github.com/macchrome/macstable).
 
 **Current Version:** 79.0.3945.79 (706915)
 
