@@ -7,6 +7,8 @@ Builds are pulled from [macchrome/macstable](https://github.com/macchrome/macsta
 
 **Current Version:** 79.0.3945.79 (706915)
 
+![](https://github.com/mtslzr/marmaduke-chromium/workflows/Test/badge.svg)
+
 ## Installation
 
 ```bash
