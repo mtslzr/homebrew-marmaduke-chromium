@@ -5,7 +5,7 @@
 All Chromium releases can be found at [Woolyss](https://chromium.woolyss.com).
 Builds are pulled from [macchrome/macstable](https://github.com/macchrome/macstable).
 
-**Current Version:** 79.0.3945.130 (706915)
+**Current Version:** 79.0.3945.130 (706915) / Ungoogled 80.0.3987.106 (722274)
 
 ![](https://github.com/mtslzr/marmaduke-chromium/workflows/Test/badge.svg)
 
