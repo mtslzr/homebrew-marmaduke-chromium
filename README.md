@@ -36,6 +36,12 @@ brew cask uninstall marmaduke-chromium
 brew untap mtslzr/marmaduke-chromium
 ```
 
+## macOS / "The App Can't Be Opened"
+
+As is the case with numerous Homebrew packages, macOS will warn the first time you open Chromium after an install/update.
+
+For more information, see [here](https://github.com/Homebrew/homebrew-cask/blob/master/doc/faq/the_app_cant_be_opened.md).
+
 ## Updates
 
 If you notice a missing update, please [reach out](mailto:m@tthewsalazar.com) or open a merge request. Thanks!
