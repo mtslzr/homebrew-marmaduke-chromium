@@ -9,11 +9,11 @@ Builds are pulled from [macchrome/macstable](https://github.com/macchrome/macsta
 
 **Current Versions**
 
-![](https://img.shields.io/badge/marmaduke--chromium-84.0.4147.89%20(768962)-blue)
+![](https://img.shields.io/badge/marmaduke--chromium-85.0.4183.102%20(782793)-blue)
 
 ![](https://img.shields.io/badge/marmaduke--chromium--nosync-84.0.4147.89%20(768962)-lightblue)
 
-![](https://img.shields.io/badge/marmaduke--chromium--ungoogled-84.0.4147.125%20(768962)-yellow)
+![](https://img.shields.io/badge/marmaduke--chromium--ungoogled-85.0.4183.102%20(782793)-yellow)
 
 ## Installation
 
