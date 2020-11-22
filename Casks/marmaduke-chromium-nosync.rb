@@ -1,6 +1,6 @@
 cask 'marmaduke-chromium-nosync' do
   version '84.0.4147.89'
-  sha256 '1fcb785f59b201962dfe88aab7f48a80a5d292acb53ea25298f0cae0f2b1b859'
+  sha256 'dfa9967acb4767bf5046133690d55ef6bec9bf3b594654ece8e05c09eb3a1247'
 
   url "https://github.com/macchrome/macstable/releases/download/v#{version}-r768962-macOS/Chromium.#{version}.nosync.app.zip"
   appcast 'https://github.com/macchrome/macstable/releases.atom'
