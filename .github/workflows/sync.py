@@ -71,12 +71,12 @@ def main():
                     version = tags[0][1:]
                     revision = tags[1]
                     file_hash = hashlib.sha256()
-                    # with urllib.request.urlopen(asset['browser_download_url']) as f:
-                    #     chunk = f.read(1024)
-                    #     while chunk:
-                    #         file_hash.update(chunk)
-                    #         chunk = f.read(1024)
-                    file_hash.update(asset['browser_download_url'].encode('utf-8'))
+                    with urllib.request.urlopen(asset['browser_download_url']) as f:
+                        chunk = f.read(1024)
+                        while chunk:
+                            file_hash.update(chunk)
+                            chunk = f.read(1024)
+                    # file_hash.update(asset['browser_download_url'].encode('utf-8'))
                     sha256 = file_hash.hexdigest()
                     rb_path = os.path.join(current_dir, '../../Casks', TEMPLATE[config_name]['path'])
                     with open(rb_path, 'w') as f:
