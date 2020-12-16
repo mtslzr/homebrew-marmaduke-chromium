@@ -5,10 +5,13 @@ import os
 import urllib.request
 import hashlib
 import json
+import re
 
 
 TEMPLATE = {
     "nosync.app": {
+        "pattern": r"marmaduke--chromium--nosync-(\d+\.){3}\d+%20\(\d+\)-lightblue",
+        "replace": "marmaduke--chromium--nosync-{version}%20({revision})-lightblue",
         "path": "marmaduke-chromium-nosync.rb",
         "content": """cask 'marmaduke-chromium-nosync' do
   version '%s'
@@ -24,6 +27,8 @@ end
 """},
 
     "app.ungoogled": {
+        "pattern": r"marmaduke--chromium--ungoogled-(\d+\.){3}\d+%20\(\d+\)-yellow",
+        "replace": "marmaduke--chromium--ungoogled-{version}%20({revision})-yellow",
         "path": "marmaduke-chromium-ungoogled.rb",
         "content": """cask 'marmaduke-chromium-ungoogled' do
   version '%s'
@@ -39,6 +44,8 @@ end
 """},
 
     "sync.app": {
+        "pattern": r"marmaduke--chromium-(\d+\.){3}\d+%20\(\d+\)-blue",
+        "replace": "marmaduke--chromium-{version}%20({revision})-blue",
         "path": "marmaduke-chromium.rb",
         "content": """cask 'marmaduke-chromium' do
   version '%s'
@@ -61,6 +68,9 @@ def main():
     html = response.read()
     data = json.loads(html.decode('utf-8'))
     latest_set = set()
+    readme_path = os.path.join(current_dir, '../../README.md')
+    with open(readme_path) as f:
+        readme_data = f.read()
     for release in data:
         for asset in release.get('assets', []):
             for config_name in TEMPLATE.keys():
@@ -70,6 +80,7 @@ def main():
                     tags = release['tag_name'].split('-')
                     version = tags[0][1:]
                     revision = tags[1]
+                    readme_data = re.sub(TEMPLATE[config_name]['pattern'], TEMPLATE[config_name]['replace'].format(version=version, revision=revision[1:]), readme_data)
                     file_hash = hashlib.sha256()
                     with urllib.request.urlopen(asset['browser_download_url']) as f:
                         chunk = f.read(1024)
@@ -82,6 +93,8 @@ def main():
                     with open(rb_path, 'w') as f:
                         f.write(TEMPLATE[config_name]["content"] % (version, sha256, revision))
                     latest_set.add(config_name)
+    with open(readme_path, 'w') as f:
+        f.write(readme_data)
 
 
 if __name__ == '__main__':
