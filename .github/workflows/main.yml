@@ -13,12 +13,12 @@ jobs:
       - name: Update Brew
         run: brew update
       - name: Install Cask
-        run: brew cask install marmaduke-chromium
+        run: brew install --cask marmaduke-chromium
       - name: Uninstall Cask
-        run: brew cask uninstall marmaduke-chromium
+        run: brew uninstall --cask marmaduke-chromium
       - name: Install Cask (nosync)
-        run: brew cask install marmaduke-chromium-nosync
+        run: brew install --cask marmaduke-chromium-nosync
       - name: Uninstall Cask (nosync)
-        run: brew cask uninstall marmaduke-chromium-nosync
+        run: brew uninstall --cask marmaduke-chromium-nosync
       - name: Install Cask (ungoogled)
-        run: brew cask install marmaduke-chromium-ungoogled
+        run: brew install --cask marmaduke-chromium-ungoogled
