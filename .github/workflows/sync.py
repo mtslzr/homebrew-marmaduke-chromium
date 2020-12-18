@@ -76,6 +76,8 @@ def main():
             for config_name in TEMPLATE.keys():
                 if config_name in latest_set:
                     continue
+                if asset['name'].endswith('arm64.zip'):
+                    continue
                 if config_name in asset['name'] and config_name not in latest_set:
                     tags = release['tag_name'].split('-')
                     version = tags[0][1:]
