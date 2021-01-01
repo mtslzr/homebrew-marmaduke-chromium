@@ -20,7 +20,7 @@ Builds are pulled from [macchrome/macstable](https://github.com/macchrome/macsta
 ```bash
 brew tap mtslzr/marmaduke-chromium
 brew update
-brew cask install marmaduke-chromium
+brew install marmaduke-chromium
 ```
 
 ## Casks
