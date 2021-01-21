@@ -9,7 +9,7 @@ Builds are pulled from [macchrome/macstable](https://github.com/macchrome/macsta
 
 **Current Versions**
 
-![](https://img.shields.io/badge/marmaduke--chromium-86.0.4240.111%20(800218)-blue)
+![](https://img.shields.io/badge/marmaduke--chromium-88.0.4324.96%20(827102)-blue)
 
 ![](https://img.shields.io/badge/marmaduke--chromium--nosync-84.0.4147.89%20(768962)-lightblue)
 
