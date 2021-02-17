@@ -13,7 +13,7 @@ Builds are pulled from [macchrome/macstable](https://github.com/macchrome/macsta
 
 ![](https://img.shields.io/badge/marmaduke--chromium--nosync-84.0.4147.89%20(768962)-lightblue)
 
-![](https://img.shields.io/badge/marmaduke--chromium--ungoogled-88.0.4324.150%20(827102)-yellow)
+![](https://img.shields.io/badge/marmaduke--chromium--ungoogled-88.0.4324.182%20(827102)-yellow)
 
 ## Installation
 
