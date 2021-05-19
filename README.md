@@ -38,7 +38,7 @@ If you're unsure, you most likely want to install `marmaduke-chromium`.
 ## Removal
 
 ```bash
-brew cask uninstall marmaduke-chromium
+brew uninstall marmaduke-chromium
 brew untap mtslzr/marmaduke-chromium
 ```
 
