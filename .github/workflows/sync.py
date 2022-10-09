@@ -19,7 +19,7 @@ TEMPLATE = {
   version '%s'
   sha256 '%s'
 
-  url "https://github.com/macchrome/macstable/releases/download/v#{version}-%s-macOS/Chromium.#{version}.nosync.app.zip"
+  url "%s"
   appcast 'https://github.com/macchrome/macstable/releases.atom'
   name 'Chromium'
   homepage 'https://github.com/macchrome/macstable/releases'
@@ -37,7 +37,7 @@ end
   version '%s'
   sha256 '%s'
 
-  url "https://github.com/macchrome/macstable/releases/download/v#{version}-%s-Ungoogled-macOS/Chromium.app.ungoogled-#{version}.(zip|tar\.xz)"
+  url '%s'
   appcast 'https://github.com/macchrome/macstable/releases.atom'
   name 'Chromium'
   homepage 'https://github.com/macchrome/macstable/releases'
@@ -47,7 +47,7 @@ end
 """},
 
     "sync.app": {
-        "name": r"Chromium\.(\d+\.){3}\d+\.sync\.app\.zip",
+        "name": r"Chromium\.(\d+\.){3}\d+\.sync\.app\.(zip|tar\.xz)",
         "pattern": r"marmaduke--chromium-(\d+\.){3}\d+%20\(\d+\)-blue",
         "replace": "marmaduke--chromium-{version}%20({revision})-blue",
         "path": "marmaduke-chromium.rb",
@@ -55,7 +55,7 @@ end
   version '%s'
   sha256 '%s'
 
-  url "https://github.com/macchrome/macstable/releases/download/v#{version}-%s-macOS/Chromium.#{version}.sync.app.zip"
+  url '%s'
   appcast 'https://github.com/macchrome/macstable/releases.atom'
   name 'Chromium'
   homepage 'https://github.com/macchrome/macstable/releases'
@@ -101,7 +101,7 @@ def generate():
                     sha256 = file_hash.hexdigest()
                     rb_path = os.path.join(current_dir, '../../Casks', config['path'])
                     with open(rb_path, 'w') as f:
-                        f.write(config["content"] % (version, sha256, revision))
+                        f.write(config["content"] % (version, sha256, revision, asset['browser_download_url']))
                     latest_set.add(config_name)
     with open(readme_path, 'w') as f:
         f.write(readme_data)
