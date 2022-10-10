@@ -101,7 +101,7 @@ def generate():
                     sha256 = file_hash.hexdigest()
                     rb_path = os.path.join(current_dir, '../../Casks', config['path'])
                     with open(rb_path, 'w') as f:
-                        f.write(config["content"] % (version, sha256, revision, asset['browser_download_url']))
+                        f.write(config["content"] % (version, sha256, asset['browser_download_url']))
                     latest_set.add(config_name)
     with open(readme_path, 'w') as f:
         f.write(readme_data)
