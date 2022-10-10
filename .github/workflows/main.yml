@@ -1,13 +1,13 @@
 name: Test
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   install_homebrew:
     runs-on: macos-latest
     steps:
       - name: Install Homebrew
-        run: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        run: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" 
       - name: Tap Repo
         run: brew tap mtslzr/marmaduke-chromium
       - name: Update Brew
