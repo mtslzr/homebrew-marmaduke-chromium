@@ -1,6 +1,6 @@
 name: Test
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   install_homebrew:
