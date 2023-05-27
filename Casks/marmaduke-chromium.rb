@@ -1,8 +1,8 @@
 cask 'marmaduke-chromium' do
-  version '112.5615.55'
-  sha256 '68146c47d46be5e2f86b317d2d13953adc7e1ff6615fd5efbba8fa593ec7304d'
+  version '114.5735.53'
+  sha256 '28c024f1f18bde7014ab43ed86f50b31f90b38d2cbd7b9d744e9da25e21e603c'
 
-  url 'https://github.com/macchrome/macstable/releases/download/v112.5615.55-M112.0.5615.55-r1109224-macOS/Chromium.app.sync-112.0.5615.55.tar.xz'
+  url 'https://github.com/macchrome/macstable/releases/download/v114.5735.53-M114.0.5735.53-r1135570-macOS/Chromium.app.sync-114.0.5735.53.tar.xz'
   appcast 'https://github.com/macchrome/macstable/releases.atom'
   name 'Chromium'
   homepage 'https://github.com/macchrome/macstable/releases'
