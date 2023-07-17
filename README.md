@@ -9,7 +9,7 @@ Builds are pulled from [macchrome/macstable](https://github.com/macchrome/macsta
 
 **Current Versions**
 
-![](https://img.shields.io/badge/marmaduke--chromium-100.0.4896.60%20(972766)-blue)
+![](https://img.shields.io/badge/marmaduke--chromium-109.5414.65%20(1070088)-blue)
 
 ![](https://img.shields.io/badge/marmaduke--chromium--nosync-84.0.4147.89%20(768962)-lightblue)
 
@@ -46,7 +46,7 @@ brew untap mtslzr/marmaduke-chromium
 
 As is the case with numerous Homebrew packages, macOS will warn the first time you open Chromium after an install/update.
 
-For more information, see [here](https://github.com/Homebrew/homebrew-cask/blob/master/doc/faq/app_cant_be_opened.md).
+For more information, see [here](https://docs.brew.sh/FAQ#why-cant-i-open-a-mac-app-from-an-unidentified-developer).
 
 ## Updates
 

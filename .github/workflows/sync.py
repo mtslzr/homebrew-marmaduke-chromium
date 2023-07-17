@@ -47,7 +47,7 @@ end
 """},
 
     "sync.app": {
-        "name": r"Chromium\.(\d+\.){3}\d+\.sync\.app\.(zip|tar\.xz)",
+        "name": r"Chromium\.app\.sync-(\d+\.){3}\d+\.(zip|tar\.xz)",
         "pattern": r"marmaduke--chromium-(\d+\.){3}\d+%20\(\d+\)-blue",
         "replace": "marmaduke--chromium-{version}%20({revision})-blue",
         "path": "marmaduke-chromium.rb",
