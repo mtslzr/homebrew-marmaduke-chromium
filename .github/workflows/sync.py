@@ -20,7 +20,7 @@ TEMPLATE = {
   sha256 '%s'
 
   url "%s"
-  appcast 'https://github.com/macchrome/macstable/releases.atom'
+  livecheck 'https://github.com/macchrome/macstable/releases.atom'
   name 'Chromium'
   homepage 'https://github.com/macchrome/macstable/releases'
 
@@ -38,7 +38,7 @@ end
   sha256 '%s'
 
   url '%s'
-  appcast 'https://github.com/macchrome/macstable/releases.atom'
+  livecheck 'https://github.com/macchrome/macstable/releases.atom'
   name 'Chromium'
   homepage 'https://github.com/macchrome/macstable/releases'
 
@@ -56,7 +56,7 @@ end
   sha256 '%s'
 
   url '%s'
-  appcast 'https://github.com/macchrome/macstable/releases.atom'
+  livecheck 'https://github.com/macchrome/macstable/releases.atom'
   name 'Chromium'
   homepage 'https://github.com/macchrome/macstable/releases'
 
